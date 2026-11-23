@@ -58,6 +58,11 @@ build_desktop.bat    instalación y empaquetado en Windows
 - El ejecutable generado no está firmado; Windows puede mostrar un aviso de
   SmartScreen.
 
+## Documentación
+
+`DOCUMENTACION.md` cubre la arquitectura, las reglas de validación, la
+clasificación, el manejo de errores y las limitaciones conocidas.
+
 ## Licencia
 
 MIT. Ver `LICENSE`.
