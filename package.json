@@ -1,0 +1,23 @@
+{
+  "name": "calculadora-imc",
+  "version": "1.0.0",
+  "description": "Calculadora de índice de masa corporal para escritorio, hecha con Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . CalculadoraIMC --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [
+    "imc",
+    "bmi",
+    "electron",
+    "calculadora"
+  ],
+  "author": "ektorlast23",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}

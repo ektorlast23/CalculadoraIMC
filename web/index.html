@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+    
+    <main class="main-container">
+        <div class="glass-card">
+            <header class="card-header">
+                <div class="logo-container">
+                    <span class="logo-icon">⚖️</span>
+                </div>
+                <h1>Calculadora de IMC</h1>
+                <p class="subtitle">Descubre tu estado físico al instante</p>
+            </header>
+            
+            <form id="imc-form" class="calc-form" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <label for="weight">Peso (kg)</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="weight" placeholder="Ej. 70.5" inputmode="decimal" required>
+                        <span class="input-unit">kg</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="height">Altura (m)</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="height" placeholder="Ej. 1.75" inputmode="decimal" required>
+                        <span class="input-unit">m</span>
+                    </div>
+                </div>
+
+                <button type="button" id="calc-button" class="btn-calculate">
+                    <span>Calcular IMC</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </form>
+
+            <div id="result-container" class="result-container hidden">
+                <div class="result-divider"></div>
+                <div class="result-content">
+                    <div class="imc-display">
+                        <span class="imc-value-label">Tu IMC es</span>
+                        <div id="imc-value" class="imc-number">--</div>
+                    </div>
+                    <div class="imc-classification-card">
+                        <span class="class-label">Clasificación</span>
+                        <div id="imc-classification" class="class-value">--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
